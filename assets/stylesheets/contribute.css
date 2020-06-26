@@ -1,0 +1,148 @@
+h5 {
+	text-transform: uppercase;
+	color: black;
+	font-weight: 300;
+	padding-top: 20px;
+}
+*:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+input [type="checkbox"] {
+	vertical-align: middle;
+}
+
+
+.sideDivText, .donationContainer {
+	padding: 20px;
+}
+.donationContainer {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+	width: 40%;
+	border: 1px solid #7ebc59;
+	border-radius: 20px;
+	justify-content: space-around;
+}
+.donationContainer label {
+	background-color: transparent;
+	color: black;
+	padding: 5px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+	text-decoration: none;
+}
+.btn-green:hover, .btn-green.active, .btn-green.active:hover {
+	background-color: #7ebc59;
+	color: white;
+}
+.donationContainer label:hover {
+	background-color: #7ebc59;
+	outline: none;
+	box-shadow: none;
+	color: white;
+	border: 1px solid #eaeaea;
+}
+.donationContainer input[type="radio"] {
+	display: none;
+}
+.donationContainer *:focus {
+	outline: none;
+}
+
+.donationText {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+}
+.donationText label {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+}
+.donationText label:hover, label:active{
+	background-color: transparent;
+	color: black;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+.donationText input {
+	width: 100%;
+	border: none;
+}
+
+.donationContainerLine {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.donationContainerLine select {
+	outline: none;
+	box-shadow: none;
+	color: black;
+	border: 1px solid #eaeaea;
+	padding: 7px;
+}
+
+.donationItem {
+	flex-grow: 1;
+	margin: 10px 20px 10px 20px;
+}
+.donationRadio label {
+	background-color: transparent;
+	border: none;
+	color: black;
+	padding: 5px;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+}
+.donationRadio label:hover, label:active{
+	background-color: transparent;
+	color: black;
+	border: none;
+}
+.donationRadio input[type=checkbox] {
+	visibility: hidden;
+}
+.informedCheck {
+	position: static;
+	float: left;
+	height: 20px;
+	width: 20px;
+	background-color: white;
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+}
+.checkboxLabel:hover input ~ .informedCheck {
+	background-color: gainsboro;
+}
+.checkboxLabel input:checked ~ .informedCheck {
+	background-color: #abde8c;
+	border: 1px solid #7ebc59;
+}
+.donationContainer button {
+	color: white;
+	background-color: #7ebc59;
+	border: none;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+	text-transform: uppercase;
+	align-items: left;
+}
+
+@media only screen and (max-width: 768px) {
+	.donationContainer {width: 100%; margin:0; padding: 0; border: none;}
+}
+
+@media only screen and (max-width: 1024px) {
+	.donationContainer label {border: 1px solid #ccc;}
+	.donationText label {border: none;}
+	.donationRadio label {border: none;}
+}

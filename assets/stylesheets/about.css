@@ -1,0 +1,57 @@
+
+/*Diversity Statement container*/
+.diversityStatement {
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+}
+.diversityStatement h2 {
+	font-size: 40px;
+	color: #7ebc59;
+	font-weight: 800;
+	text-align: left;
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+/*Call to Action container*/
+.actContainer {
+	margin: auto;
+	width: 80%;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.actText {
+	text-align: center;
+	background-color: #7ebc59;
+	height: 400px;
+	display: table;
+	color: white;
+}
+.actText h3 {
+	color: white;
+}
+.actText h5 {
+	font-weight: 250;
+	color: white;
+}
+.actText p {
+	color: white;
+}
+.actImage {
+	z-index: 0;
+}
+.bookIcon {
+	background-color: white;
+	width: 100px;
+	height: 100px;
+	padding: 16px;
+	margin: 30px auto;
+	border-radius: 30px;
+}
+.bookIcon > .fa {
+	color: #7ebc59;
+}

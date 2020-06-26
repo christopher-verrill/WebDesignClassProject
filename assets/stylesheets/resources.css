@@ -1,0 +1,107 @@
+h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+
+
+.resourceHeader {
+	width: 100%;
+	background-color: #33363b;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+.resourceHeader h2 {
+	color: white;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.recommended {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	width: 70%;
+	text-align: center;
+	padding-top: 40px;
+}
+.recommended img p {
+	margin: auto;
+}
+
+.resourcesContainer {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+}
+.resourcesContainer h3 {
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.booksNonfiction, .resourcesDocumentaries{
+	flex-grow: 2;
+	padding: 10px;
+	border-right: 1px solid #eaeaea;
+}
+.booksFiction, .resourcesFilms {
+	flex-grow: 1;
+	padding: 10px;
+}
+.bookCovers, .videoCovers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.bookCoverImage {
+	padding: 10px;
+}
+.podcastContainer {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin: auto;
+}
+.podcastImageText {
+	text-align: center;
+	width: 33%;
+}
+.podcastImageText img {
+	padding: 10px;
+}
+.resourcesDocumentaries {
+	width: 66%;
+}
+.resourcesFilms {
+	width: 33%;
+}
+.documentaryContainer {
+	width: 33%;
+	text-align: center;
+}
+
+.filmContainer {
+	width: 50%;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.resourcesContainer {flex-direction: column;}
+	.resourcesDocumentaries {width: 100%;}
+	.resourcesFilms {width: 100%;}
+	.documentaryContainer{width: 50%; padding: 10px;}
+	img.responsive {width: 100px;}
+}
+
+@media only screen and (max-width: 1024px) {
+	img.responsive {width: 120px;}
+}
